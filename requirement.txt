@@ -1,0 +1,15 @@
+numpy
+pandas
+opencv-python
+mediapipe
+protobuf
+torch
+torchvision
+torchaudio
+scikit-learn
+matplotlib
+seaborn
+tqdm
+transformers
+accelerate
+kaggle
