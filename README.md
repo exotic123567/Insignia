@@ -1,5 +1,5 @@
 # Insignia
-This repository contains code for training models on <a href="https://www.kaggle.com/datasets/linardur/include-24-medical-modified/data">INCLUDE 24 Medical Modified dataset</a>
+This repository contains code for training models on <a href="https://www.kaggle.com/datasets/linardur/include-24-medical-modified/data">INCLUDE 24 Medical Modified dataset</a> along with the model generated from training it on that dataset.
 
 
 # What this includes
