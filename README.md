@@ -6,8 +6,16 @@ The website implementation for this model as a React webapp is in this <a href="
 
 # What this includes
 
-> Lightweight Bi-LSTM + Soft-Attention model that reaches **92 % test accuracy** on a focused 24-word medical vocabulary for Indian Sign Language (ISL).  
-> Trained on a **curated extension** of the public [INCLUDE-50] dataset plus ~400 smartphone clips we recorded to balance signer diversity, lighting and camera angles.
+Lightweight Bi-LSTM + Soft-Attention model that reaches **92 % test accuracy** on a focused 24-word medical vocabulary for Indian Sign Language (ISL).  
+
+Trained on a **curated extension** of the public [INCLUDE-50] dataset plus ~400 smartphone clips we recorded to balance signer diversity, lighting and camera angles.
+
+---
+
+# Dataset Courtesy
+
+We would like to thank Sridhar, Advaith & Team for providing such a detailed <a href="https://zenodo.org/records/4010759">video dataset</a> for Indian Sign Language. We have added additional videos to their dataset to enrich this dataset for our model training purposes.
+Grab it directly from <a href="https://www.kaggle.com/datasets/linardur/include-24-medical-modified/data">Kaggle</a>.
 
 ---
 
@@ -45,6 +53,19 @@ pip install -r requirements.txt           # Only initial requirements - download
 ## 🏃‍♂️ Quick Start
 By now, you should have a folder named dataset in which all your videos should be stored - basically rename the downloaded kaggle dataset to "dataset". The file structure should look something like :
 
+```bash
+Insignia/
+│
+├── README.md                      # project overview + how to run
+├── requirements.txt               # packages list (the file we just created)
+├── .gitignore                     # ignore large data, checkpoints, __pycache__, etc.
+├── dataset/                          # ♥ DO NOT COMMIT large raw data
+│   ├── Baby/                       # original INCLUDE-50 & our recorded MP4/AVI/MOV video files
+│   ├── Bill/                 # 60-frame MP4s or extracted .npy files
+│   └── ...      # In total 24 folders of videos
+├── sign_recognizer_best.pth  # Trained Model
+└── Pytorch_Training_Code.ipynb # Jupyter Notebook
+```
 
 ### 1 ▶ Generate/verify landmarks (optional)
 
